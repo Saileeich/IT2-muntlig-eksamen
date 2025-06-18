@@ -1,94 +1,6 @@
 [
     {
         "player": {
-            "x": 10,
-            "y": 28,
-            "speed": 3
-        },
-        "enemies": [
-            {
-                "position_a": { "x": 2, "y": 8 },
-                "position_b": { "x": 17, "y": 8 },
-                "speed": 3,
-                "rotation_speed": 4
-            },
-            {
-                "position_a": { "x": 5, "y": 18 },
-                "position_b": { "x": 5, "y": 24 },
-                "speed": 3,
-                "rotation_speed": 4
-            },
-            {
-                "position_a": { "x": 15, "y": 18 },
-                "position_b": { "x": 15, "y": 24 },
-                "speed": 3,
-                "rotation_speed": 4
-            },
-            {
-                "position_a": { "x": 8, "y": 13 },
-                "position_b": { "x": 12, "y": 17 },
-                "speed": 3,
-                "rotation_speed": 4
-            },
-            {
-                "position_a": { "x": 3, "y": 4 },
-                "position_b": { "x": 16, "y": 4 },
-                "speed": 3,
-                "rotation_speed": 4
-            },
-            {
-                "position_a": { "x": 10, "y": 0 },
-                "position_b": { "x": 10, "y": 6 },
-                "speed": 3,
-                "rotation_speed": 4
-            }
-        ],
-            "obstacles": [
-            { "position": { "x": 0, "y": 6 } },
-            { "position": { "x": 1, "y": 6 } },
-            { "position": { "x": 2, "y": 6 } },
-            { "position": { "x": 3, "y": 6 } },
-            { "position": { "x": 4, "y": 6 } },
-            { "position": { "x": 5, "y": 6 } },
-            { "position": { "x": 6, "y": 6 } },
-            { "position": { "x": 13, "y": 6 } },
-            { "position": { "x": 14, "y": 6 } },
-            { "position": { "x": 15, "y": 6 } },
-            { "position": { "x": 16, "y": 6 } },
-            { "position": { "x": 17, "y": 6 } },
-            { "position": { "x": 18, "y": 6 } },
-            { "position": { "x": 19, "y": 6 } },
-
-            { "position": { "x": 4, "y": 12 } },
-            { "position": { "x": 5, "y": 12 } },
-            { "position": { "x": 6, "y": 12 } },
-            { "position": { "x": 7, "y": 12 } },
-            { "position": { "x": 13, "y": 12 } },
-            { "position": { "x": 14, "y": 12 } },
-            { "position": { "x": 15, "y": 12 } },
-            { "position": { "x": 16, "y": 12 } },
-
-            { "position": { "x": 0, "y": 20 } },
-            { "position": { "x": 1, "y": 20 } },
-            { "position": { "x": 2, "y": 20 } },
-            { "position": { "x": 3, "y": 20 } },
-            { "position": { "x": 4, "y": 20 } },
-            { "position": { "x": 15, "y": 20 } },
-            { "position": { "x": 16, "y": 20 } },
-            { "position": { "x": 17, "y": 20 } },
-            { "position": { "x": 18, "y": 20 } },
-            { "position": { "x": 19, "y": 20 } }
-        ],
-            "victory_tiles": [
-            { "position": { "x": 8, "y": 0 } },
-            { "position": { "x": 9, "y": 0 } },
-            { "position": { "x": 10, "y": 0 } },
-            { "position": { "x": 11, "y": 0 } },
-            { "position": { "x": 12, "y": 0 } }
-        ]
-    },
-    {
-        "player": {
             "x": 1,
             "y": 28,
             "speed": 3
@@ -698,6 +610,94 @@
                     "y": 0
                 }
             }
+        ]
+    },
+    {
+        "player": {
+            "x": 10,
+            "y": 28,
+            "speed": 3
+        },
+        "enemies": [
+            {
+                "position_a": { "x": 2, "y": 8 },
+                "position_b": { "x": 17, "y": 8 },
+                "speed": 3,
+                "rotation_speed": 4
+            },
+            {
+                "position_a": { "x": 5, "y": 18 },
+                "position_b": { "x": 5, "y": 24 },
+                "speed": 3,
+                "rotation_speed": 4
+            },
+            {
+                "position_a": { "x": 15, "y": 18 },
+                "position_b": { "x": 15, "y": 24 },
+                "speed": 3,
+                "rotation_speed": 4
+            },
+            {
+                "position_a": { "x": 8, "y": 13 },
+                "position_b": { "x": 12, "y": 17 },
+                "speed": 3,
+                "rotation_speed": 4
+            },
+            {
+                "position_a": { "x": 3, "y": 4 },
+                "position_b": { "x": 16, "y": 4 },
+                "speed": 3,
+                "rotation_speed": 4
+            },
+            {
+                "position_a": { "x": 10, "y": 0 },
+                "position_b": { "x": 10, "y": 6 },
+                "speed": 3,
+                "rotation_speed": 4
+            }
+        ],
+            "obstacles": [
+            { "position": { "x": 0, "y": 6 } },
+            { "position": { "x": 1, "y": 6 } },
+            { "position": { "x": 2, "y": 6 } },
+            { "position": { "x": 3, "y": 6 } },
+            { "position": { "x": 4, "y": 6 } },
+            { "position": { "x": 5, "y": 6 } },
+            { "position": { "x": 6, "y": 6 } },
+            { "position": { "x": 13, "y": 6 } },
+            { "position": { "x": 14, "y": 6 } },
+            { "position": { "x": 15, "y": 6 } },
+            { "position": { "x": 16, "y": 6 } },
+            { "position": { "x": 17, "y": 6 } },
+            { "position": { "x": 18, "y": 6 } },
+            { "position": { "x": 19, "y": 6 } },
+
+            { "position": { "x": 4, "y": 12 } },
+            { "position": { "x": 5, "y": 12 } },
+            { "position": { "x": 6, "y": 12 } },
+            { "position": { "x": 7, "y": 12 } },
+            { "position": { "x": 13, "y": 12 } },
+            { "position": { "x": 14, "y": 12 } },
+            { "position": { "x": 15, "y": 12 } },
+            { "position": { "x": 16, "y": 12 } },
+
+            { "position": { "x": 0, "y": 20 } },
+            { "position": { "x": 1, "y": 20 } },
+            { "position": { "x": 2, "y": 20 } },
+            { "position": { "x": 3, "y": 20 } },
+            { "position": { "x": 4, "y": 20 } },
+            { "position": { "x": 15, "y": 20 } },
+            { "position": { "x": 16, "y": 20 } },
+            { "position": { "x": 17, "y": 20 } },
+            { "position": { "x": 18, "y": 20 } },
+            { "position": { "x": 19, "y": 20 } }
+        ],
+            "victory_tiles": [
+            { "position": { "x": 8, "y": 0 } },
+            { "position": { "x": 9, "y": 0 } },
+            { "position": { "x": 10, "y": 0 } },
+            { "position": { "x": 11, "y": 0 } },
+            { "position": { "x": 12, "y": 0 } }
         ]
     },
     {
