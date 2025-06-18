@@ -1,0 +1,118 @@
+<mxfile host="65bd71144e">
+    <diagram id="zN1rlAp7kSq28-DpmxGx" name="Page-1">
+        <mxGraphModel dx="1329" dy="1641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#DBDBDB" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="App" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="-270" width="200" height="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="+ font: pygame.font.Font&lt;div&gt;+ clock: pygame.time.Clock&lt;/div&gt;&lt;div&gt;+ FPS: int&lt;/div&gt;&lt;div&gt;+ tile_size: int&lt;/div&gt;&lt;div&gt;+ WIDTH: int&lt;/div&gt;&lt;div&gt;+ HEIGHT: int&lt;/div&gt;&lt;div&gt;+ running: bool&lt;/div&gt;&lt;div&gt;+ colours: dict&lt;/div&gt;&lt;div&gt;+ level: int&lt;/div&gt;&lt;div&gt;+ events: dict&lt;/div&gt;&lt;div&gt;+ playing: bool&lt;/div&gt;&lt;div&gt;+ boot: bool&lt;/div&gt;&lt;div&gt;+ game_over: bool&lt;/div&gt;&lt;div&gt;+ victory: bool&lt;/div&gt;&lt;div&gt;+ boot_time: int&lt;/div&gt;&lt;div&gt;+ sprites: dict&lt;/div&gt;&lt;div&gt;+ screen: pygame.Surface&lt;/div&gt;" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry y="26" width="200" height="254" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="2">
+                    <mxGeometry y="280" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="+ run(): None&lt;div&gt;+ boot_loop(): None&lt;/div&gt;&lt;div&gt;+ game_loop(): None&lt;/div&gt;&lt;div&gt;+ game_over_loop(): None&lt;/div&gt;&lt;div&gt;+ victory_loop(): None&lt;/div&gt;&lt;div&gt;+ start_game(): None&lt;/div&gt;&lt;div&gt;+ load_level(id: int): None&lt;/div&gt;&lt;div&gt;+ draw(): None&lt;/div&gt;&lt;div&gt;+ update(): None&lt;/div&gt;&lt;div&gt;+ handle_events(): dict&lt;/div&gt;" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry y="288" width="200" height="162" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Player" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="830" y="370" width="320" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="+ size: int&lt;div&gt;+ position: pygame.Vector2&lt;/div&gt;&lt;div&gt;+ speed: float&lt;/div&gt;&lt;div&gt;+ sprint_multiplier: float&lt;/div&gt;&lt;div&gt;+ image: pygame.Surface&lt;/div&gt;&lt;div&gt;+ rect: pygame.Rect&lt;/div&gt;&lt;div&gt;+ mask: pygame.Mask&lt;/div&gt;" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="10">
+                    <mxGeometry y="26" width="320" height="114" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="10">
+                    <mxGeometry y="140" width="320" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="- init(size: int, position: pygame.Vector2, colour: tuple, speed: float, sprint_multiplier: float): None&lt;div&gt;+ update(events: dict, groups: dict): None&lt;/div&gt;&lt;div&gt;+ get_closest_entity(entity_group: pygame.Sprite.Group): Sprite&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="10">
+                    <mxGeometry y="148" width="320" height="92" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Enemy" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="380" width="320" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="+ move_points: list&lt;div&gt;+ move_state: int&lt;/div&gt;&lt;div&gt;+ target: pygame.Vector2&lt;/div&gt;&lt;div&gt;+ speed: float&lt;/div&gt;&lt;div&gt;+ size: int&lt;/div&gt;&lt;div&gt;+ colour: tuple&lt;/div&gt;&lt;div&gt;+ alerted_colour: tuple&lt;/div&gt;&lt;div&gt;+ image: pygame.Surface&lt;/div&gt;&lt;div&gt;+ rect: pygame.Rect&lt;/div&gt;&lt;div&gt;+ rotation: float&lt;/div&gt;&lt;div&gt;+ rotating: bool&lt;/div&gt;&lt;div&gt;+ detection_cone: DetectionCone&lt;/div&gt;&lt;div&gt;+ detection_threshold: int&lt;/div&gt;" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="14">
+                    <mxGeometry y="26" width="320" height="204" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="14">
+                    <mxGeometry y="230" width="320" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="- init(size: int, position1: pygame.Vector2, position2: pygame.Vector2, idle_colour: tuple, alerted_colour: tuple, speed: float, rotation_speed: int): None&lt;div&gt;+ update(): None&lt;/div&gt;&lt;div&gt;+ increase_detection(amount: float): None&lt;/div&gt;" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="14">
+                    <mxGeometry y="238" width="320" height="92" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="pygame.sprite.Sprite" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="730" y="130" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="DetectionCone" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="800" width="240" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;+ enemy: Enemy&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;+ radius: float&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;+ detection_angle: float&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;+ colour: tuple&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;+ image: Surface&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;+ rect: Rect&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;+ mask: Mask&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="20">
+                    <mxGeometry y="26" width="240" height="114" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="20">
+                    <mxGeometry y="140" width="240" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="- init(enemy: Enemy, radius: float, detection_angle: float, colour: tuple): None&lt;div&gt;+ update(collision_group: pygame.sprite.GroupSingle): None&lt;/div&gt;" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="20">
+                    <mxGeometry y="148" width="240" height="72" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;entryX=0.29;entryY=0.994;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="14" target="5">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="410" y="260" as="sourcePoint"/>
+                        <mxPoint x="530" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.865;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="10" target="5">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="470" y="260" as="sourcePoint"/>
+                        <mxPoint x="580" y="200" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="573" y="290"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="20">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="520" y="750" as="sourcePoint"/>
+                        <mxPoint x="460" y="709" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.677;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="10" target="18">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="840" y="300" as="sourcePoint"/>
+                        <mxPoint x="820" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.107;entryY=1.027;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="14" target="18">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="670" y="280" as="sourcePoint"/>
+                        <mxPoint x="830" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="20">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="640" y="750" as="sourcePoint"/>
+                        <mxPoint x="772" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="Tile" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="760" y="800" width="180" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ size: int&lt;/span&gt;&lt;div&gt;+ position: pygame.Vector2&lt;/div&gt;&lt;div&gt;+ image: pygame.Surface&lt;/div&gt;&lt;div&gt;+ rect: pygame.Rect&lt;/div&gt;&lt;div&gt;+ mask: pygame.Mask&lt;/div&gt;" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="40">
+                    <mxGeometry y="26" width="180" height="84" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="40">
+                    <mxGeometry y="110" width="180" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="- init(size: int, position: pygame.Vector2, colour: tuple)" style="text;strokeColor=none;fillColor=default;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="40">
+                    <mxGeometry y="118" width="180" height="42" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0.189;exitY=-0.006;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="40" target="18">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="720" y="710" as="sourcePoint"/>
+                        <mxPoint x="880" y="710" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

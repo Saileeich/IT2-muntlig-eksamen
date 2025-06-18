@@ -34,7 +34,7 @@ class App:
         self.boot = True
         self.game_over = False
         self.victory = False
-        self.boot_time = 8000
+        self.boot_time = 5000
         
 
     def run(self):
