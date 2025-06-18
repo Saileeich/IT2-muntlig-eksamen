@@ -100,7 +100,7 @@ class App:
 
         self.load_level(self.level)
 
-    def load_level(self, id):
+    def load_level(self, id: int):
         with open("assets/level.json", "r") as file:
             level_data = json.load(file)[id]
 
@@ -125,17 +125,15 @@ class App:
     def draw(self):
         # Fyller skjermen og tegner sprites på nytt
         self.screen.fill(self.colours["col1"])
-        
-        # Visualiserer rekkevidden for gå lyden
-        for enemy in self.sprites["enemies"]:
-            pygame.draw.circle(self.screen, self.colours["col4"], (enemy.rect.centerx, enemy.rect.centery), self.tile_size*2.5, 1)
+
+        for sprite_group in self.sprites.values():
+            sprite_group.draw(self.screen)
 
         # Visualiserer rekkevidden for sprint lyden
         if self.events["lshift"]:
             pygame.draw.circle(self.screen, self.colours["col2"], (self.sprites["player"].sprite.rect.centerx, self.sprites["player"].sprite.rect.centery), self.tile_size*11.5, 1)
-
-        for sprite_group in self.sprites.values():
-            sprite_group.draw(self.screen)
+        else:
+            pygame.draw.circle(self.screen, self.colours["col2"], (self.sprites["player"].sprite.rect.centerx, self.sprites["player"].sprite.rect.centery), self.tile_size*2.5, 1)
 
         """# Debug
         pygame.draw.rect(self.screen, (0,255,0), self.sprites["player"].sprite.rect, 2)
