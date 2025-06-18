@@ -26,7 +26,7 @@ class Enemy(pygame.sprite.Sprite):
         self.rotating = False
         self.rotation_speed = rotation_speed
 
-        self.detection_cone = DetectionCone(self, 100, 50, self.alerted_colour)
+        self.detection_cone = DetectionCone(self, 6*self.size, 60, self.alerted_colour)
         self.detection = 0
         self.detection_threshold = 10
 
@@ -53,12 +53,17 @@ class Enemy(pygame.sprite.Sprite):
         )
         pygame.draw.circle(self.image, new_colour, (self.size // 2, self.size // 2), self.size // 2)
 
-    def increase_detection(self):
-        self.detection += 1
+        self.detection -= 0.03
+        if self.detection < 0:
+            self.detection = 0
+
+    def increase_detection(self, amount: float = 1):
+        self.detection += amount
         if self.detection > self.detection_threshold:
             self.detection = self.detection_threshold
-            self.colour = self.alerted_colour
-            print("Enemy alerted!")
+            
+            # Lag egen event
+            pygame.event.post(pygame.event.Event(pygame.USEREVENT, {"player_detected": self}))
 
 
 class DetectionCone(pygame.sprite.Sprite):
@@ -97,5 +102,4 @@ class DetectionCone(pygame.sprite.Sprite):
 
         collided = pygame.sprite.spritecollide(self, collision_group, False, pygame.sprite.collide_mask)
         if collided:
-            self.enemy.increase_detection()
-            print(self.enemy.detection)
+            self.enemy.increase_detection(1.2)

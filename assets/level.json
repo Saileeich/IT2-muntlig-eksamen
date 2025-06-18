@@ -1,0 +1,703 @@
+[
+    {
+        "player": {
+            "x": 10,
+            "y": 28,
+            "speed": 3
+        },
+        "enemies": [
+            {
+                "position_a": { "x": 2, "y": 8 },
+                "position_b": { "x": 17, "y": 8 },
+                "speed": 3,
+                "rotation_speed": 4
+            },
+            {
+                "position_a": { "x": 5, "y": 18 },
+                "position_b": { "x": 5, "y": 24 },
+                "speed": 3,
+                "rotation_speed": 4
+            },
+            {
+                "position_a": { "x": 15, "y": 18 },
+                "position_b": { "x": 15, "y": 24 },
+                "speed": 3,
+                "rotation_speed": 4
+            },
+            {
+                "position_a": { "x": 8, "y": 13 },
+                "position_b": { "x": 12, "y": 17 },
+                "speed": 3,
+                "rotation_speed": 4
+            },
+            {
+                "position_a": { "x": 3, "y": 4 },
+                "position_b": { "x": 16, "y": 4 },
+                "speed": 3,
+                "rotation_speed": 4
+            },
+            {
+                "position_a": { "x": 10, "y": 0 },
+                "position_b": { "x": 10, "y": 6 },
+                "speed": 3,
+                "rotation_speed": 4
+            }
+        ],
+            "obstacles": [
+            { "position": { "x": 0, "y": 6 } },
+            { "position": { "x": 1, "y": 6 } },
+            { "position": { "x": 2, "y": 6 } },
+            { "position": { "x": 3, "y": 6 } },
+            { "position": { "x": 4, "y": 6 } },
+            { "position": { "x": 5, "y": 6 } },
+            { "position": { "x": 6, "y": 6 } },
+            { "position": { "x": 13, "y": 6 } },
+            { "position": { "x": 14, "y": 6 } },
+            { "position": { "x": 15, "y": 6 } },
+            { "position": { "x": 16, "y": 6 } },
+            { "position": { "x": 17, "y": 6 } },
+            { "position": { "x": 18, "y": 6 } },
+            { "position": { "x": 19, "y": 6 } },
+
+            { "position": { "x": 4, "y": 12 } },
+            { "position": { "x": 5, "y": 12 } },
+            { "position": { "x": 6, "y": 12 } },
+            { "position": { "x": 7, "y": 12 } },
+            { "position": { "x": 13, "y": 12 } },
+            { "position": { "x": 14, "y": 12 } },
+            { "position": { "x": 15, "y": 12 } },
+            { "position": { "x": 16, "y": 12 } },
+
+            { "position": { "x": 0, "y": 20 } },
+            { "position": { "x": 1, "y": 20 } },
+            { "position": { "x": 2, "y": 20 } },
+            { "position": { "x": 3, "y": 20 } },
+            { "position": { "x": 4, "y": 20 } },
+            { "position": { "x": 15, "y": 20 } },
+            { "position": { "x": 16, "y": 20 } },
+            { "position": { "x": 17, "y": 20 } },
+            { "position": { "x": 18, "y": 20 } },
+            { "position": { "x": 19, "y": 20 } }
+        ],
+            "victory_tiles": [
+            { "position": { "x": 8, "y": 0 } },
+            { "position": { "x": 9, "y": 0 } },
+            { "position": { "x": 10, "y": 0 } },
+            { "position": { "x": 11, "y": 0 } },
+            { "position": { "x": 12, "y": 0 } }
+        ]
+    },
+    {
+        "player": {
+            "x": 1,
+            "y": 28,
+            "speed": 3
+        },
+        "enemies": [
+            {
+                "position_a": {
+                    "x": 1,
+                    "y": 2
+                },
+                "position_b": {
+                    "x": 18,
+                    "y": 8
+                },
+                "speed": 3,
+                "rotation_speed": 4
+            },
+            {
+                "position_a": {
+                    "x": 18,
+                    "y": 2
+                },
+                "position_b": {
+                    "x": 1,
+                    "y": 8
+                },
+                "speed": 3,
+                "rotation_speed": 4
+            },
+            {
+                "position_a": {
+                    "x": 1,
+                    "y": 13
+                },
+                "position_b": {
+                    "x": 18,
+                    "y": 13
+                },
+                "speed": 3,
+                "rotation_speed": 4
+            },
+            {
+                "position_a": {
+                    "x": 2,
+                    "y": 21
+                },
+                "position_b": {
+                    "x": 9,
+                    "y": 21
+                },
+                "speed": 3,
+                "rotation_speed": 4
+            },
+            {
+                "position_a": {
+                    "x": 14,
+                    "y": 17
+                },
+                "position_b": {
+                    "x": 14,
+                    "y": 28
+                },
+                "speed": 3,
+                "rotation_speed": 4
+            }
+        ],
+        "obstacles": [
+            {
+                "position": {
+                    "x": 9,
+                    "y": 3
+                }
+            },
+            {
+                "position": {
+                    "x": 10,
+                    "y": 3
+                }
+            },
+            {
+                "position": {
+                    "x": 2,
+                    "y": 5
+                }
+            },
+            {
+                "position": {
+                    "x": 3,
+                    "y": 5
+                }
+            },
+            {
+                "position": {
+                    "x": 17,
+                    "y": 5
+                }
+            },
+            {
+                "position": {
+                    "x": 18,
+                    "y": 5
+                }
+            },
+            {
+                "position": {
+                    "x": 9,
+                    "y": 8
+                }
+            },
+            {
+                "position": {
+                    "x": 10,
+                    "y": 8
+                }
+            },
+            {
+                "position": {
+                    "x": 0,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 1,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 2,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 3,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 4,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 5,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 9,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 10,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 11,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 12,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 13,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 14,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 15,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 16,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 17,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 18,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 19,
+                    "y": 11
+                }
+            },
+            {
+                "position": {
+                    "x": 2,
+                    "y": 17
+                }
+            },
+            {
+                "position": {
+                    "x": 3,
+                    "y": 17
+                }
+            },
+            {
+                "position": {
+                    "x": 4,
+                    "y": 17
+                }
+            },
+            {
+                "position": {
+                    "x": 5,
+                    "y": 17
+                }
+            },
+            {
+                "position": {
+                    "x": 6,
+                    "y": 17
+                }
+            },
+            {
+                "position": {
+                    "x": 7,
+                    "y": 17
+                }
+            },
+            {
+                "position": {
+                    "x": 8,
+                    "y": 17
+                }
+            },
+            {
+                "position": {
+                    "x": 9,
+                    "y": 17
+                }
+            },
+            {
+                "position": {
+                    "x": 12,
+                    "y": 15
+                }
+            },
+            {
+                "position": {
+                    "x": 12,
+                    "y": 16
+                }
+            },
+            {
+                "position": {
+                    "x": 12,
+                    "y": 17
+                }
+            },
+            {
+                "position": {
+                    "x": 12,
+                    "y": 18
+                }
+            },
+            {
+                "position": {
+                    "x": 13,
+                    "y": 15
+                }
+            },
+            {
+                "position": {
+                    "x": 14,
+                    "y": 15
+                }
+            },
+            {
+                "position": {
+                    "x": 15,
+                    "y": 15
+                }
+            },
+            {
+                "position": {
+                    "x": 16,
+                    "y": 15
+                }
+            },
+            {
+                "position": {
+                    "x": 16,
+                    "y": 16
+                }
+            },
+            {
+                "position": {
+                    "x": 16,
+                    "y": 17
+                }
+            },
+            {
+                "position": {
+                    "x": 16,
+                    "y": 18
+                }
+            },
+            {
+                "position": {
+                    "x": 16,
+                    "y": 19
+                }
+            },
+            {
+                "position": {
+                    "x": 16,
+                    "y": 20
+                }
+            },
+            {
+                "position": {
+                    "x": 16,
+                    "y": 21
+                }
+            },
+            {
+                "position": {
+                    "x": 16,
+                    "y": 22
+                }
+            },
+            {
+                "position": {
+                    "x": 12,
+                    "y": 22
+                }
+            },
+            {
+                "position": {
+                    "x": 12,
+                    "y": 23
+                }
+            },
+            {
+                "position": {
+                    "x": 12,
+                    "y": 24
+                }
+            },
+            {
+                "position": {
+                    "x": 12,
+                    "y": 25
+                }
+            },
+            {
+                "position": {
+                    "x": 0,
+                    "y": 26
+                }
+            },
+            {
+                "position": {
+                    "x": 1,
+                    "y": 26
+                }
+            },
+            {
+                "position": {
+                    "x": 2,
+                    "y": 26
+                }
+            },
+            {
+                "position": {
+                    "x": 3,
+                    "y": 26
+                }
+            },
+            {
+                "position": {
+                    "x": 4,
+                    "y": 26
+                }
+            },
+            {
+                "position": {
+                    "x": 5,
+                    "y": 26
+                }
+            },
+            {
+                "position": {
+                    "x": 6,
+                    "y": 26
+                }
+            },
+            {
+                "position": {
+                    "x": 7,
+                    "y": 26
+                }
+            },
+            {
+                "position": {
+                    "x": 8,
+                    "y": 26
+                }
+            },
+            {
+                "position": {
+                    "x": 9,
+                    "y": 26
+                }
+            },
+            {
+                "position": {
+                    "x": 10,
+                    "y": 26
+                }
+            },
+            {
+                "position": {
+                    "x": 11,
+                    "y": 26
+                }
+            },
+            {
+                "position": {
+                    "x": 12,
+                    "y": 26
+                }
+            },
+            {
+                "position": {
+                    "x": 16,
+                    "y": 26
+                }
+            },
+            {
+                "position": {
+                    "x": 17,
+                    "y": 26
+                }
+            },
+            {
+                "position": {
+                    "x": 18,
+                    "y": 26
+                }
+            },
+            {
+                "position": {
+                    "x": 19,
+                    "y": 26
+                }
+            }
+        ],
+        "victory_tiles": [
+            {
+                "position": {
+                    "x": 0,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 1,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 2,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 3,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 4,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 5,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 6,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 7,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 8,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 9,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 10,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 11,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 12,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 13,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 14,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 15,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 16,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 17,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 18,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 19,
+                    "y": 0
+                }
+            },
+            {
+                "position": {
+                    "x": 20,
+                    "y": 0
+                }
+            }
+        ]
+    }
+]
